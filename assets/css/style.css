@@ -1,0 +1,76 @@
+body {
+    background-image: url(../images/background.png);
+}
+
+h1 {
+    color: white;
+    background-color: rgb(206, 116, 7);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.game-instructions {
+    background-color: rgb(255, 205, 129);
+    padding: 5px 2px;
+    margin-bottom: 35px;
+}
+
+p {
+    text-align: center;
+    font-size: 14pt;
+}
+
+#random-number {
+    text-align: center;
+    background-color: rgb(104, 228, 166);
+    height:100px;
+    line-height: 100px;
+}
+
+.wins-losses {
+    text-align: center;
+    background-color: rgb(113, 233, 217);
+    height:100px;
+    line-height: 40px;
+}
+
+#user-score-total {
+    text-align: left;
+    margin-top: 35px;
+}
+
+.crystal-box {
+    text-align: center;
+    margin-top: 35px;
+}
+
+img {
+    height: 85px;
+    width: 85px;
+    margin: 0 8px;
+}
+
+img:hover{
+    cursor: pointer;
+    border: 5px solid darkblue;
+
+}
+
+img:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#user-number, #user-score-total {
+    background-color: rgb(3, 145, 126);
+    color: white;
+}
+
+#user-number {
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+}
+

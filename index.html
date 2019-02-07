@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href="assets/css/style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><h1>Crystal Collector!</h1></div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 game-instructions">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. If your total score goes over the random number, you lose.</p>
+                <p>The value of each cystal is hidden from you until you click on it.</p>
+                <p>The value of crystals will change each game. </p>
+                <p>Good Luck!</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 random-number">
+                <h3 id="random-number">Number Here</h3> 
+            </div>
+            <div class="col-md-3 wins-losses">
+                <p>Wins: 0</p>
+                <p>Loses: 0</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            
+            <div class="col-md-6 crystal-box">
+                <img src="assets/images/red.png" class="crystal" alt="red crystal">
+       
+                <img src="assets/images/blue.png" class="crystal" alt="blue crystal">
+       
+                <img src="assets/images/yellow.png" class="crystal" alt="yellow crystal">
+    
+                <img src="assets/images/green.png" class="crystal" alt="green crystal">
+            </div>
+    
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p id="user-score-total">Your total score is: </p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3 id="user-number">Number Here</h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="main.js"></script>    
+</body>
+</html>

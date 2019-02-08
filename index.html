@@ -36,11 +36,11 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3 random-number">
-                <h3 id="random-number">Number Here</h3> 
+                <h3 id="random-number"></h3> 
             </div>
             <div class="col-md-3 wins-losses">
-                <p>Wins: 0</p>
-                <p>Loses: 0</p>
+                <p>Wins: <span id="wins"></span></p>
+                <p>Loses: <span id="losses"></span></p>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -49,13 +49,13 @@
             <div class="col-md-3"></div>
             
             <div class="col-md-6 crystal-box">
-                <img src="assets/images/red.png" class="crystal" alt="red crystal">
+                <img src="assets/images/red.png" class="crystal" id="redCrystal" alt="red crystal">
        
-                <img src="assets/images/blue.png" class="crystal" alt="blue crystal">
+                <img src="assets/images/blue.png" class="crystal" id="blueCrystal" alt="blue crystal">
        
-                <img src="assets/images/yellow.png" class="crystal" alt="yellow crystal">
+                <img src="assets/images/yellow.png" class="crystal" id="yellowCrystal" alt="yellow crystal">
     
-                <img src="assets/images/green.png" class="crystal" alt="green crystal">
+                <img src="assets/images/green.png" class="crystal" id="greenCrystal" alt="green crystal">
             </div>
     
             <div class="col-md-3"></div>
@@ -72,7 +72,7 @@
         <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <h3 id="user-number">Number Here</h3>
+                    <h3 id="user-number"></h3>
                 </div>
                 <div class="col-md-4"></div>
             </div>
@@ -81,6 +81,6 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="main.js"></script>    
+<script src="assets/javascript/game.js"></script>    
 </body>
 </html>

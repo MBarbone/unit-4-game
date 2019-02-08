@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
-    "use strict"
+"use strict"
+
 // generate random number each new game
 var randomNumber = (Math.floor(Math.random() *(120-19) + 19));
 
@@ -19,10 +20,10 @@ var greenCrystal= (Math.floor(Math.random() *(12-1) + 1));
 // functions
 
 // generates random number & random values for each crystal
-function gameStart () {
-    var score = 0;
-    var wins = 0;
-    var losses = 0;
+function gameStart() {
+    var score= 0;
+    var wins= 0;
+    var losses= 0;
     randomNumber;
     redCrystal;
     blueCrystal;
@@ -30,66 +31,66 @@ function gameStart () {
     greenCrystal;
 
     $("#random-number").text(randomNumber);
-    $('#wins').text(wins);
-    $('#losses').text(losses);
+    $("#user-number").text(score);
+
 };
 
 gameStart();
 
+// win or lose, compare userNumber to randomNumber and game reset
+function winner() {
+    wins++;
+    alert("You Won!");
+    $("#wins").text(wins);
+    gameStart();
+};
+
+function loser() {
+    losses++;
+    alert("You Lost! Try Again!");
+    $("#losses").text(losses);
+    gameStart();
+};
 
 
 $("#redCrystal").on("click", function() {
     score += redCrystal;
         $("#user-number").text(score);
-            if (score===randomNumber) {
-                wins();
+            if(score===randomNumber){
+                winner();
             } else if(score > randomNumber){
-                losses();
+                loser();
             };
 });
 
 $("#blueCrystal").on("click", function() {
     score += blueCrystal;
         $("#user-number").text(score);
-            if (score===randomNumber) {
-                wins();
+            if(score===randomNumber) {
+                winner();
             } else if(score > randomNumber){
-                losses();
+                loser();
             };
 });
 
 $("#yellowCrystal").on("click", function() {
     score += yellowCrystal;
          $("#user-number").text(score);
-            if (score===randomNumber) {
-                wins();
+            if(score===randomNumber) {
+                winner();
             } else if(score > randomNumber){
-                losses();
+                loser();
             };
 });
 
 $("#greenCrystal").on("click", function() {
     score += greenCrystal;
         $("#user-number").text(score);
-            if (score===randomNumber) {
-                wins();
+            if(score===randomNumber) {
+                winner();
             } else if(score > randomNumber){
-                losses();
+                loser();
             };
 });
-
-// win or lose, compare userNumber to randomNumber and game reset
-function wins() {
-    wins++;
-    alert("You Won!");
-    gameStart();
-};
-
-function losses () {
-    losses++;
-    alert("You Lost! Try Again!");
-    gameStart();
-};
-
 
 });

@@ -32,14 +32,27 @@ function gameStart() {
 
     $("#random-number").text(randomNumber);
     $("#user-number").text(score);
-
 };
 
 gameStart();
 
+
+// sound functions
+
+function playCorrect() {
+    document.getElementById('correct-answer').play();
+};
+
+// function playWrong() {
+//     document.getElementById('wrong-answer').play();
+// };
+
+
+
 // win or lose, compare userNumber to randomNumber and game reset
 function winner() {
     wins++;
+    playCorrect();
     alert("You Won!");
     $("#wins").text(wins);
     gameStart();
@@ -47,10 +60,12 @@ function winner() {
 
 function loser() {
     losses++;
+    // playWrong();
     alert("You Lost! Try Again!");
     $("#losses").text(losses);
     gameStart();
 };
+
 
 
 $("#redCrystal").on("click", function() {

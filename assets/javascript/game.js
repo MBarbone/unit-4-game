@@ -1,6 +1,5 @@
 $(document).ready(function() {
     
-"use strict"
 
 // generate random number each new game
 var randomNumber = (Math.floor(Math.random() *(120-19) + 19));
@@ -33,14 +32,12 @@ function playCorrect() {
 
 // generates random number & random values for each crystal
 function gameStart() {
-    var score= 0;
-    var wins= 0;
-    var losses= 0;
-    randomNumber;
-    redCrystal;
-    blueCrystal;
-    yellowCrystal;
-    greenCrystal;
+    score= 0;
+    randomNumber= (Math.floor(Math.random() *(120-19) + 19));
+    redCrystal= (Math.floor(Math.random() *(12-1) + 1));
+    blueCrystal= (Math.floor(Math.random() *(12-1) + 1));
+    yellowCrystal= (Math.floor(Math.random() *(12-1) + 1));
+    greenCrystal= (Math.floor(Math.random() *(12-1) + 1));
 
     $("#random-number").text(randomNumber);
     $("#user-number").text(score);

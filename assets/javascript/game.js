@@ -19,6 +19,18 @@ var greenCrystal= (Math.floor(Math.random() *(12-1) + 1));
 
 // functions
 
+
+// sound functions
+
+function playCorrect() {
+    document.getElementById('correct-answer').play();
+};
+
+// function playWrong() {
+//     document.getElementById('wrong-answer').play();
+// };
+
+
 // generates random number & random values for each crystal
 function gameStart() {
     var score= 0;
@@ -35,18 +47,6 @@ function gameStart() {
 };
 
 gameStart();
-
-
-// sound functions
-
-function playCorrect() {
-    document.getElementById('correct-answer').play();
-};
-
-// function playWrong() {
-//     document.getElementById('wrong-answer').play();
-// };
-
 
 
 // win or lose, compare userNumber to randomNumber and game reset
